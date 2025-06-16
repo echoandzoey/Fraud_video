@@ -8,51 +8,79 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Understanding AI Fraud</h1>
-        <p class="subtitle">Protecting Yourself in the Digital Age</p>
-      </header>
+      <!-- Top Banner Section -->
+      <section class="top-banner">
+        <img src="assets/top-banner.png" alt="Top Banner" />
+      </section>
 
-      <main>
-        <section class="video-section">
-          <div class="video-container">
-            <!-- 视频将在这里嵌入 -->
-            <video id="fraudVideo" controls>
-              <source src="assets/fraud_video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+      <!-- Language Selector -->
+      <section class="language-selector">
+        <button id="lang-en" class="btn lang-btn active">English</button>
+        <button id="lang-nl" class="btn lang-btn">Nederlands</button>
+      </section>
+
+      <!-- Main Content Section -->
+      <section class="main-content">
+        <div id="content-en">
+          <h1>New Financial Program Launched!</h1>
+          <div class="benefits-list">
+            <p><strong>The benefits:</strong></p>
+            <ul>
+              <li>Up to €5,000 per week return</li>
+              <li>Secured with DigiD</li>
+              <li>Under supervision of De Nederlandsche Bank</li>
+            </ul>
           </div>
-        </section>
+        </div>
 
-        <section class="content-section">
-          <h2>What is AI Fraud?</h2>
-          <p>
-            Artificial Intelligence has revolutionized many aspects of our
-            lives, but it has also given rise to new forms of fraud. Scammers
-            are increasingly using AI technology to create sophisticated scams
-            that can be difficult to detect.
-          </p>
-
-          <h3>Common AI Fraud Types:</h3>
-          <ul>
-            <li>Deepfake Videos and Audio</li>
-            <li>AI-Generated Phishing Emails</li>
-            <li>Automated Social Engineering</li>
-            <li>Voice Cloning Scams</li>
-          </ul>
-
-          <div class="cta-button">
-            <a href="technology.html" class="btn"
-              >Learn More About AI Technology</a
-            >
+        <div id="content-nl" style="display: none">
+          <h1>Nieuw Financieel Programma gelanceerd!</h1>
+          <div class="benefits-list">
+            <p><strong>De voordelen:</strong></p>
+            <ul>
+              <li>Tot €5.000 per week rendement</li>
+              <li>Beveiligd met DigiD</li>
+              <li>Onder toezicht van De Nederlandsche Bank</li>
+            </ul>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
-      <footer>
-        <p>© 2024 AI Fraud Awareness. All rights reserved.</p>
-      </footer>
+      <!-- Info Card Section -->
+      <section class="info-card">
+        <div class="card-content">
+          <div class="card-text">
+            <h2 id="card-title">Meld je nu aan</h2>
+            <p id="investment-text">
+              Met een startinvestering van slechts €450 ondersteund door AI en
+              onder toezicht van De Nederlandsche Bank.
+            </p>
+            <button id="action-btn" class="action-button">
+              Ga door met DigiD
+            </button>
+          </div>
+          <div class="card-image">
+            <img src="assets/side-image.png" alt="Side Image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Section -->
+      <section class="video-section">
+        <div class="video-container">
+          <video id="fraudVideo" controls>
+            <source src="assets/fraud_eng.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <!-- Bottom Banner Section -->
+      <section class="bottom-banner">
+        <img src="assets/bottom-image.png" alt="Bottom Banner" />
+      </section>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

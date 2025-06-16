@@ -1,4 +1,4 @@
-/* 全局样式 */
+/* 全局样式重置 */
 * {
   margin: 0;
   padding: 0;
@@ -6,130 +6,280 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f5f5f5;
+  font-family: "Inter", "Arial", sans-serif;
+  line-height: 1.2;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 20px;
+  background-color: #ffffff;
 }
 
-/* 头部样式 */
-header {
+/* 顶部横幅样式 */
+.top-banner {
+  width: 100%;
+  height: 148px;
+  overflow: hidden;
+}
+
+.top-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 语言选择器样式 */
+.language-selector {
   text-align: center;
-  padding: 40px 0;
-  background-color: #fff;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  background-color: #ffffff;
 }
 
-h1 {
-  color: #2c3e50;
-  font-size: 2.5em;
+.lang-btn {
+  margin: 0 10px;
+  padding: 12px 30px;
+  background-color: #bdc3c7;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.lang-btn.active {
+  background-color: #01689b;
+}
+
+.lang-btn:hover {
+  background-color: #01689b;
+}
+
+/* 主内容区域样式 */
+.main-content {
+  padding: 40px 95px;
+  background-color: #ffffff;
+}
+
+.main-content h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.benefits-list {
+  margin-top: 20px;
+}
+
+.benefits-list p {
+  margin-bottom: 15px;
+}
+
+.benefits-list ul {
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+.benefits-list li {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.21;
+  color: #000000;
   margin-bottom: 10px;
 }
 
-.subtitle {
-  color: #7f8c8d;
-  font-size: 1.2em;
+/* 信息卡片样式 */
+.info-card {
+  padding: 0 95px;
+  margin-bottom: 40px;
+}
+
+.card-content {
+  display: flex;
+  align-items: stretch;
+  background-color: #ddeff8;
+  border-radius: 10px;
+  padding: 0;
+  position: relative;
+  min-height: 321px;
+  overflow: hidden;
+}
+
+.card-text {
+  flex: 1;
+  padding: 40px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-text h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.card-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.action-button {
+  background-color: #01689b;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.action-button:hover {
+  background-color: #014a6b;
+}
+
+.card-image {
+  width: 246px;
+  height: 321px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 10px 10px 0;
 }
 
 /* 视频部分样式 */
 .video-section {
-  margin-bottom: 40px;
+  padding: 40px 103px;
+  background-color: #ffffff;
 }
 
 .video-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 1002px;
+  height: 494px;
   margin: 0 auto;
-  background-color: #000;
+  background-color: #d9d9d9;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 video {
   width: 100%;
-  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* 内容部分样式 */
-.content-section {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* 底部横幅样式 */
+.bottom-banner {
+  background-color: #eef7fb;
+  padding: 0 128px;
+  height: 449px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-h2 {
-  color: #2c3e50;
-  margin-bottom: 20px;
-}
-
-h3 {
-  color: #34495e;
-  margin: 20px 0 15px;
-}
-
-p {
-  margin-bottom: 15px;
-}
-
-ul {
-  list-style-position: inside;
-  margin-bottom: 20px;
-}
-
-li {
-  margin-bottom: 10px;
-  color: #555;
-}
-
-/* 按钮样式 */
-.cta-button {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 30px;
-  background-color: #3498db;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #2980b9;
-}
-
-/* 页脚样式 */
-footer {
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-  color: #7f8c8d;
+.bottom-banner img {
+  max-width: 1004px;
+  max-height: 439px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* 响应式设计 */
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .container {
-    padding: 10px;
+    max-width: 100%;
   }
 
-  h1 {
-    font-size: 2em;
+  .main-content,
+  .info-card {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
-  .content-section {
-    padding: 20px;
+  .video-section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .bottom-banner {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content h1 {
+    font-size: 18px;
+  }
+
+  .main-content p,
+  .benefits-list li,
+  .card-text p {
+    font-size: 16px;
+  }
+
+  .card-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .card-image img {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .video-container {
+    height: 300px;
+  }
+
+  .main-content,
+  .info-card,
+  .video-section {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

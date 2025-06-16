@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fraud Revealed - AI Awareness</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* 特殊样式用于警告页面 */
+      .warning-header {
+        background: linear-gradient(135deg, #ff4757, #ff3838);
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+        margin-bottom: 40px;
+      }
+
+      .warning-title {
+        font-size: 3em;
+        font-weight: 900;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .warning-subtitle {
+        font-size: 1.5em;
+        font-weight: 500;
+        opacity: 0.9;
+      }
+
+      .explanation-section {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin: 40px auto;
+        max-width: 1000px;
+      }
+
+      .tech-explanation h2 {
+        color: #2c3e50;
+        font-size: 2.2em;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 15px;
+      }
+
+      .tech-explanation h3 {
+        color: #34495e;
+        font-size: 1.5em;
+        margin: 30px 0 15px;
+        font-weight: 600;
+      }
+
+      .tech-explanation p {
+        font-size: 1.1em;
+        line-height: 1.8;
+        color: #444;
+        margin-bottom: 20px;
+      }
+
+      .tech-explanation ul {
+        margin: 20px 0;
+        padding-left: 30px;
+      }
+
+      .tech-explanation li {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 12px;
+      }
+
+      .back-button {
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      .btn-back {
+        background-color: #3498db;
+        color: white;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1em;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+
+      .btn-back:hover {
+        background-color: #2980b9;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 警告标题区域 -->
+      <section class="warning-header">
+        <h1 class="warning-title" id="warning-title">
+          You are being scammed!!!
+        </h1>
+        <p class="warning-subtitle" id="warning-subtitle">
+          This was a demonstration of how AI fraud works
+        </p>
+      </section>
+
+      <!-- 技术解释区域 -->
+      <section class="explanation-section">
+        <div class="tech-explanation" id="content-en">
+          <h2>How AI Deepfake Technology Works</h2>
+
+          <h3>What are Deepfakes?</h3>
+          <p>
+            Deepfakes are AI-generated videos or audio recordings that make it
+            appear as if someone said or did something they never actually did.
+            This technology uses advanced machine learning algorithms to swap
+            faces, manipulate expressions, and even synthesize voices with
+            incredible realism.
+          </p>
+
+          <h3>How the Technology Works:</h3>
+          <ul>
+            <li>
+              <strong>Neural Networks:</strong> Deep learning models analyze
+              thousands of images and videos of a target person
+            </li>
+            <li>
+              <strong>Face Mapping:</strong> AI identifies facial features,
+              expressions, and movement patterns
+            </li>
+            <li>
+              <strong>Voice Synthesis:</strong> Advanced algorithms can clone
+              voices from just a few minutes of audio
+            </li>
+            <li>
+              <strong>Real-time Processing:</strong> Modern technology can
+              create convincing deepfakes in real-time
+            </li>
+          </ul>
+
+          <h3>Warning Signs to Watch For:</h3>
+          <ul>
+            <li>Unnatural facial movements or expressions</li>
+            <li>Inconsistent lighting or shadows</li>
+            <li>Blurring around the edges of faces</li>
+            <li>Audio that doesn't perfectly sync with lip movements</li>
+            <li>Requests for money or personal information</li>
+          </ul>
+
+          <h3>How to Protect Yourself:</h3>
+          <ul>
+            <li>
+              Always verify through multiple channels (phone call, in-person
+              meeting)
+            </li>
+            <li>
+              Be suspicious of urgent requests for money or personal information
+            </li>
+            <li>Look for inconsistencies in video quality and audio</li>
+            <li>Use official channels for financial transactions</li>
+            <li>Stay informed about the latest fraud techniques</li>
+          </ul>
+        </div>
+
+        <div class="tech-explanation" id="content-nl" style="display: none">
+          <h2>Hoe AI Deepfake Technologie Werkt</h2>
+
+          <h3>Wat zijn Deepfakes?</h3>
+          <p>
+            Deepfakes zijn door AI gegenereerde video's of audio-opnames die
+            doen lijken alsof iemand iets heeft gezegd of gedaan wat ze nooit
+            werkelijk hebben gedaan. Deze technologie gebruikt geavanceerde
+            machine learning algoritmen om gezichten te verwisselen, expressies
+            te manipuleren en zelfs stemmen te synthetiseren met ongelooflijk
+            realisme.
+          </p>
+
+          <h3>Hoe de Technologie Werkt:</h3>
+          <ul>
+            <li>
+              <strong>Neurale Netwerken:</strong> Deep learning modellen
+              analyseren duizenden afbeeldingen en video's van een doelpersoon
+            </li>
+            <li>
+              <strong>Gezichtsmapping:</strong> AI identificeert
+              gezichtskenmerken, expressies en bewegingspatronen
+            </li>
+            <li>
+              <strong>Stemsynthese:</strong> Geavanceerde algoritmen kunnen
+              stemmen klonen met slechts enkele minuten audio
+            </li>
+            <li>
+              <strong>Real-time Verwerking:</strong> Moderne technologie kan
+              overtuigende deepfakes in real-time creëren
+            </li>
+          </ul>
+
+          <h3>Waarschuwingssignalen om Op te Letten:</h3>
+          <ul>
+            <li>Onnatuurlijke gezichtsbewegingen of expressies</li>
+            <li>Inconsistente belichting of schaduwen</li>
+            <li>Vervaging rond de randen van gezichten</li>
+            <li>Audio die niet perfect synchroniseert met lipbewegingen</li>
+            <li>Verzoeken om geld of persoonlijke informatie</li>
+          </ul>
+
+          <h3>Hoe Jezelf te Beschermen:</h3>
+          <ul>
+            <li>
+              Verifieer altijd via meerdere kanalen (telefoongesprek,
+              persoonlijke ontmoeting)
+            </li>
+            <li>
+              Wees achterdochtig bij urgente verzoeken om geld of persoonlijke
+              informatie
+            </li>
+            <li>Let op inconsistenties in videokwaliteit en audio</li>
+            <li>Gebruik officiële kanalen voor financiële transacties</li>
+            <li>Blijf geïnformeerd over de nieuwste fraudetechnieken</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 返回按钮 -->
+      <section class="back-button">
+        <a href="index.html" class="btn-back" id="back-btn"> Back to Home </a>
+      </section>
+    </div>
+
+    <script>
+      // 根据URL参数自动设置语言
+      document.addEventListener("DOMContentLoaded", function () {
+        const contentEN = document.getElementById("content-en");
+        const contentNL = document.getElementById("content-nl");
+        const warningTitle = document.getElementById("warning-title");
+        const warningSubtitle = document.getElementById("warning-subtitle");
+        const backBtn = document.getElementById("back-btn");
+
+        // 获取URL参数
+        const urlParams = new URLSearchParams(window.location.search);
+        const lang = urlParams.get("lang") || "en"; // 默认为英语
+
+        // 根据语言参数设置内容
+        if (lang === "nl") {
+          // 荷兰语版本
+          contentEN.style.display = "none";
+          contentNL.style.display = "block";
+          warningTitle.innerText = "Je wordt opgelicht!!!";
+          warningSubtitle.innerText =
+            "Dit was een demonstratie van hoe AI-fraude werkt";
+          backBtn.innerText = "Terug naar Home";
+        } else {
+          // 英语版本（默认）
+          contentEN.style.display = "block";
+          contentNL.style.display = "none";
+          warningTitle.innerText = "You are being scammed!!!";
+          warningSubtitle.innerText =
+            "This was a demonstration of how AI fraud works";
+          backBtn.innerText = "Back to Home";
+        }
+      });
+    </script>
+  </body>
+</html>
