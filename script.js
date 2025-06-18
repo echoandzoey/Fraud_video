@@ -1,4 +1,3 @@
-// 等待DOM加载完成
 document.addEventListener("DOMContentLoaded", function () {
   // 获取视频元素
   const video = document.getElementById("fraudVideo");
@@ -12,34 +11,42 @@ document.addEventListener("DOMContentLoaded", function () {
   const actionBtn = document.getElementById("action-btn");
   const cardTitle = document.getElementById("card-title");
 
-  langEN.addEventListener("click", function () {
-    videoSource.setAttribute("src", "assets/fraud_eng.mp4");
-    video.load();
-    video.play();
-    langEN.classList.add("active");
-    langNL.classList.remove("active");
+  function setLanguage(lang) {
+    if (lang === "nl") {
+      videoSource.setAttribute("src", "assets/fraud_dutch.mp4");
+      video.load();
+      langNL.classList.add("active");
+      langEN.classList.remove("active");
 
-    contentEN.style.display = "block";
-    contentNL.style.display = "none";
-    cardTitle.innerText = "Sign up now";
-    investmentText.innerText =
-      "With a starting investment of only €450 supported by AI and under supervision of De Nederlandsche Bank.";
-    actionBtn.innerText = "Continue with DigiD";
+      contentEN.style.display = "none";
+      contentNL.style.display = "block";
+      cardTitle.innerText = "Meld je nu aan";
+      investmentText.innerText =
+        "Met een startinvestering van slechts €450 ondersteund door AI en onder toezicht van De Nederlandsche Bank.";
+      actionBtn.innerText = "Ga door met DigiD";
+    } else {
+      videoSource.setAttribute("src", "assets/fraud_eng.mp4");
+      video.load();
+      langEN.classList.add("active");
+      langNL.classList.remove("active");
+
+      contentEN.style.display = "block";
+      contentNL.style.display = "none";
+      cardTitle.innerText = "Sign up now";
+      investmentText.innerText =
+        "With a starting investment of only €450 supported by AI and under supervision of De Nederlandsche Bank.";
+      actionBtn.innerText = "Continue with DigiD";
+    }
+  }
+
+  langEN.addEventListener("click", function () {
+    setLanguage("en");
+    video.play();
   });
 
   langNL.addEventListener("click", function () {
-    videoSource.setAttribute("src", "assets/fraud_dutch.mp4");
-    video.load();
+    setLanguage("nl");
     video.play();
-    langNL.classList.add("active");
-    langEN.classList.remove("active");
-
-    contentEN.style.display = "none";
-    contentNL.style.display = "block";
-    cardTitle.innerText = "Meld je nu aan";
-    investmentText.innerText =
-      "Met een startinvestering van slechts €450 ondersteund door AI en onder toezicht van De Nederlandsche Bank.";
-    actionBtn.innerText = "Ga door met DigiD";
   });
 
   // 如果视频存在，添加一些基本控制
@@ -64,6 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = `reveal.html?lang=${currentLang}`;
     });
   }
+
+  // Set language to Dutch by default
+  setLanguage("nl");
 
   // 平滑滚动到顶部
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
